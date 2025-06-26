@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hayde Cuesta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Interactivo -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>HC</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link">Conocimientos</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section con Efectos -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Desarrolladora Web</h1>
+            <div class="typing-text">
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">Ver Proyectos</a>
+                <a href="#contact" class="btn secondary-btn">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section con Animaciones -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="fade-in">Soy desarrolladora web apasionada por crear experiencias digitales únicas. Me especializo en desarrollo frontend y backend, y me encanta resolver problemas complejos con código limpio y eficiente.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Proyectos completados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfacción de clientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section con Tarjetas Interactivas -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Conocimientos</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section con Galería Dinámica -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Móvil</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Los proyectos se agregarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section con Formulario Interactivo -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:hayde@email.com">hayde@email.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+573000000000">+57 300 000 0000</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Medellín, Colombia</span>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Interactivo -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HC</h2>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Hayde Cuesta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
